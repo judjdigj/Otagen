@@ -6,6 +6,9 @@ def get_song_duration(file_path):
     duration = audio.info.length
     return duration
 
-file_path = 'path/to/your/song.mp3'
+file_path = 'maou_08_burning_heart.mp3'
 duration = get_song_duration(file_path)
-print(f"{duration}")
+## print(f"{duration}")
+
+chorus_start_sec = find_and_output_chorus("maou_08_burning_heart.mp3", "temp.mp3")
+print(f"{chorus_start_sec}")
